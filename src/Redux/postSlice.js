@@ -36,29 +36,3 @@ export const postSlice = createSlice({
 
 export const { addPost, deletePost, updatePost , displayPost } = postSlice.actions;
 export default postSlice.reducer;
-
-// export const postSlice = createSlice({
-//     name : "posts",
-//     initialState : {
-//         postStore : []
-//     },
-//     reducers : {
-//         addPost : function(state , action){
-//             state.postStore.push(action.payload)
-//         },
-//         deletePost : function(state , action){
-//             state.postStore = state.postStore.filter(post => post.id !== action.payload)
-//         },
-//         updatePost : function(state , action){
-//             state.postStore.map(post => {
-//                 if (post.id === action.payload.id){
-//                     post.title = action.payload.title;
-//                     post.desc = action.payload.desc;
-//                 }
-//             })
-//         }
-//     }
-// })
-
-// export const { addPost, deletePost, updatePost } = postSlice.actions
-// export default postSlice.reducer
